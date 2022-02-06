@@ -56,6 +56,10 @@
 		29AF2C1C27B00D3900F3680B /* OrangeNewsTask */ = {
 			isa = PBXGroup;
 			children = (
+				29AF2C3427B00E7500F3680B /* Model */,
+				29AF2C3327B00E6A00F3680B /* View */,
+				29AF2C3227B00E4D00F3680B /* ViewModel */,
+				29AF2C3127B00E2200F3680B /* NetworkLayer */,
 				29AF2C1D27B00D3900F3680B /* AppDelegate.swift */,
 				29AF2C1F27B00D3900F3680B /* SceneDelegate.swift */,
 				29AF2C2127B00D3900F3680B /* ViewController.swift */,
@@ -65,6 +69,34 @@
 				29AF2C2B27B00D3C00F3680B /* Info.plist */,
 			);
 			path = OrangeNewsTask;
+			sourceTree = "<group>";
+		};
+		29AF2C3127B00E2200F3680B /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		29AF2C3227B00E4D00F3680B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		29AF2C3327B00E6A00F3680B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29AF2C3427B00E7500F3680B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
