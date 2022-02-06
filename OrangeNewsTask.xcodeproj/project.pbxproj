@@ -15,9 +15,24 @@
 		29AF2C2A27B00D3C00F3680B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AF2C2827B00D3C00F3680B /* LaunchScreen.storyboard */; };
 		29AF2C3727B00F2900F3680B /* HeadlinesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C3627B00F2900F3680B /* HeadlinesResponse.swift */; };
 		29AF2C3B27B013E600F3680B /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C3A27B013E600F3680B /* ClientService.swift */; };
+		29AF2C3D27B015AB00F3680B /* ClientServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C3C27B015AB00F3680B /* ClientServiceProtocol.swift */; };
+		29AF2C4527B01E5A00F3680B /* OrangeNewsTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C4427B01E5A00F3680B /* OrangeNewsTaskTests.swift */; };
+		60B7AAE708B0DE76026D075D /* Pods_OrangeNewsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A24C98F3C63BBDC76437FE2 /* Pods_OrangeNewsTask.framework */; };
+		ABA45EB81F647259208E23F2 /* Pods_OrangeNewsTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C8DAC91C6D9C3F13CF3346 /* Pods_OrangeNewsTaskTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		29AF2C4627B01E5A00F3680B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29AF2C1227B00D3900F3680B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29AF2C1927B00D3900F3680B;
+			remoteInfo = OrangeNewsTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		025B3BECCD3A80D38E8C7EA2 /* Pods-OrangeNewsTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNewsTask.release.xcconfig"; path = "Target Support Files/Pods-OrangeNewsTask/Pods-OrangeNewsTask.release.xcconfig"; sourceTree = "<group>"; };
 		29AF2C1A27B00D3900F3680B /* OrangeNewsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeNewsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AF2C1D27B00D3900F3680B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29AF2C1F27B00D3900F3680B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +43,14 @@
 		29AF2C2B27B00D3C00F3680B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29AF2C3627B00F2900F3680B /* HeadlinesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesResponse.swift; sourceTree = "<group>"; };
 		29AF2C3A27B013E600F3680B /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
+		29AF2C3C27B015AB00F3680B /* ClientServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientServiceProtocol.swift; sourceTree = "<group>"; };
+		29AF2C4227B01E5A00F3680B /* OrangeNewsTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeNewsTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29AF2C4427B01E5A00F3680B /* OrangeNewsTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeNewsTaskTests.swift; sourceTree = "<group>"; };
+		51CF8AD93177D6C6B46842A0 /* Pods-OrangeNewsTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNewsTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeNewsTaskTests/Pods-OrangeNewsTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64C8DAC91C6D9C3F13CF3346 /* Pods_OrangeNewsTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeNewsTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A24C98F3C63BBDC76437FE2 /* Pods_OrangeNewsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeNewsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7B8863AE4AB38EFA9E76B3 /* Pods-OrangeNewsTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNewsTaskTests.release.xcconfig"; path = "Target Support Files/Pods-OrangeNewsTaskTests/Pods-OrangeNewsTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		C07D7CB086F422B706A3000B /* Pods-OrangeNewsTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNewsTask.debug.xcconfig"; path = "Target Support Files/Pods-OrangeNewsTask/Pods-OrangeNewsTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +58,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B7AAE708B0DE76026D075D /* Pods_OrangeNewsTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29AF2C3F27B01E5A00F3680B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA45EB81F647259208E23F2 /* Pods_OrangeNewsTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AA53F83ED1769E1AB3078EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C07D7CB086F422B706A3000B /* Pods-OrangeNewsTask.debug.xcconfig */,
+				025B3BECCD3A80D38E8C7EA2 /* Pods-OrangeNewsTask.release.xcconfig */,
+				51CF8AD93177D6C6B46842A0 /* Pods-OrangeNewsTaskTests.debug.xcconfig */,
+				AF7B8863AE4AB38EFA9E76B3 /* Pods-OrangeNewsTaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		29AF2C1127B00D3900F3680B = {
 			isa = PBXGroup;
 			children = (
 				29AF2C1C27B00D3900F3680B /* OrangeNewsTask */,
+				29AF2C4327B01E5A00F3680B /* OrangeNewsTaskTests */,
 				29AF2C1B27B00D3900F3680B /* Products */,
+				1AA53F83ED1769E1AB3078EE /* Pods */,
+				87E3A6C31BEC0C1FB006508B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				29AF2C1A27B00D3900F3680B /* OrangeNewsTask.app */,
+				29AF2C4227B01E5A00F3680B /* OrangeNewsTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				29AF2C3A27B013E600F3680B /* ClientService.swift */,
+				29AF2C3C27B015AB00F3680B /* ClientServiceProtocol.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -129,6 +178,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		29AF2C4327B01E5A00F3680B /* OrangeNewsTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				29AF2C4427B01E5A00F3680B /* OrangeNewsTaskTests.swift */,
+			);
+			path = OrangeNewsTaskTests;
+			sourceTree = "<group>";
+		};
+		87E3A6C31BEC0C1FB006508B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A24C98F3C63BBDC76437FE2 /* Pods_OrangeNewsTask.framework */,
+				64C8DAC91C6D9C3F13CF3346 /* Pods_OrangeNewsTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29AF2C2E27B00D3C00F3680B /* Build configuration list for PBXNativeTarget "OrangeNewsTask" */;
 			buildPhases = (
+				08759B3FEB5CB9128EEF5D00 /* [CP] Check Pods Manifest.lock */,
 				29AF2C1627B00D3900F3680B /* Sources */,
 				29AF2C1727B00D3900F3680B /* Frameworks */,
 				29AF2C1827B00D3900F3680B /* Resources */,
+				3BE4FA28AFCBBFB2C881FB1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +216,25 @@
 			productName = OrangeNewsTask;
 			productReference = 29AF2C1A27B00D3900F3680B /* OrangeNewsTask.app */;
 			productType = "com.apple.product-type.application";
+		};
+		29AF2C4127B01E5A00F3680B /* OrangeNewsTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29AF2C4827B01E5A00F3680B /* Build configuration list for PBXNativeTarget "OrangeNewsTaskTests" */;
+			buildPhases = (
+				82524B02730417F9F9A39951 /* [CP] Check Pods Manifest.lock */,
+				29AF2C3E27B01E5A00F3680B /* Sources */,
+				29AF2C3F27B01E5A00F3680B /* Frameworks */,
+				29AF2C4027B01E5A00F3680B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29AF2C4727B01E5A00F3680B /* PBXTargetDependency */,
+			);
+			name = OrangeNewsTaskTests;
+			productName = OrangeNewsTaskTests;
+			productReference = 29AF2C4227B01E5A00F3680B /* OrangeNewsTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,6 +248,10 @@
 				TargetAttributes = {
 					29AF2C1927B00D3900F3680B = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					29AF2C4127B01E5A00F3680B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 29AF2C1927B00D3900F3680B;
 					};
 				};
 			};
@@ -178,6 +269,7 @@
 			projectRoot = "";
 			targets = (
 				29AF2C1927B00D3900F3680B /* OrangeNewsTask */,
+				29AF2C4127B01E5A00F3680B /* OrangeNewsTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,7 +285,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29AF2C4027B01E5A00F3680B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08759B3FEB5CB9128EEF5D00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeNewsTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BE4FA28AFCBBFB2C881FB1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeNewsTask/Pods-OrangeNewsTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeNewsTask/Pods-OrangeNewsTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrangeNewsTask/Pods-OrangeNewsTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82524B02730417F9F9A39951 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeNewsTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29AF2C1627B00D3900F3680B /* Sources */ = {
@@ -202,13 +365,30 @@
 			files = (
 				29AF2C2227B00D3900F3680B /* ViewController.swift in Sources */,
 				29AF2C1E27B00D3900F3680B /* AppDelegate.swift in Sources */,
+				29AF2C3D27B015AB00F3680B /* ClientServiceProtocol.swift in Sources */,
 				29AF2C3727B00F2900F3680B /* HeadlinesResponse.swift in Sources */,
 				29AF2C2027B00D3900F3680B /* SceneDelegate.swift in Sources */,
 				29AF2C3B27B013E600F3680B /* ClientService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29AF2C3E27B01E5A00F3680B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AF2C4527B01E5A00F3680B /* OrangeNewsTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29AF2C4727B01E5A00F3680B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29AF2C1927B00D3900F3680B /* OrangeNewsTask */;
+			targetProxy = 29AF2C4627B01E5A00F3680B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		29AF2C2327B00D3900F3680B /* Main.storyboard */ = {
@@ -348,6 +528,7 @@
 		};
 		29AF2C2F27B00D3C00F3680B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07D7CB086F422B706A3000B /* Pods-OrangeNewsTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -376,6 +557,7 @@
 		};
 		29AF2C3027B00D3C00F3680B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025B3BECCD3A80D38E8C7EA2 /* Pods-OrangeNewsTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -402,6 +584,44 @@
 			};
 			name = Release;
 		};
+		29AF2C4927B01E5A00F3680B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CF8AD93177D6C6B46842A0 /* Pods-OrangeNewsTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASDMGZ58GV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A.Elnaggar.OrangeNewsTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeNewsTask.app/OrangeNewsTask";
+			};
+			name = Debug;
+		};
+		29AF2C4A27B01E5A00F3680B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7B8863AE4AB38EFA9E76B3 /* Pods-OrangeNewsTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASDMGZ58GV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.A.Elnaggar.OrangeNewsTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeNewsTask.app/OrangeNewsTask";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -419,6 +639,15 @@
 			buildConfigurations = (
 				29AF2C2F27B00D3C00F3680B /* Debug */,
 				29AF2C3027B00D3C00F3680B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29AF2C4827B01E5A00F3680B /* Build configuration list for PBXNativeTarget "OrangeNewsTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29AF2C4927B01E5A00F3680B /* Debug */,
+				29AF2C4A27B01E5A00F3680B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

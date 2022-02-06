@@ -1,0 +1,6 @@
+framework module Pods_OrangeNewsTaskTests {
+  umbrella header "Pods-OrangeNewsTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
