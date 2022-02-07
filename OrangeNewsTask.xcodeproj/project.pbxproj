@@ -22,6 +22,8 @@
 		29AF2C5127B032B700F3680B /* SelectCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5027B032B700F3680B /* SelectCountryViewModel.swift */; };
 		29AF2C5327B19DAF00F3680B /* CountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5227B19DAF00F3680B /* CountryResponse.swift */; };
 		29AF2C5527B19E0900F3680B /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5427B19E0900F3680B /* CategoryResponse.swift */; };
+		29AF2C5727B1A0BC00F3680B /* IntroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5627B1A0BC00F3680B /* IntroService.swift */; };
+		29AF2C5927B1A1C300F3680B /* IntroServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5827B1A1C300F3680B /* IntroServiceProtocol.swift */; };
 		60B7AAE708B0DE76026D075D /* Pods_OrangeNewsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A24C98F3C63BBDC76437FE2 /* Pods_OrangeNewsTask.framework */; };
 		ABA45EB81F647259208E23F2 /* Pods_OrangeNewsTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C8DAC91C6D9C3F13CF3346 /* Pods_OrangeNewsTaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		29AF2C5027B032B700F3680B /* SelectCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryViewModel.swift; sourceTree = "<group>"; };
 		29AF2C5227B19DAF00F3680B /* CountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryResponse.swift; sourceTree = "<group>"; };
 		29AF2C5427B19E0900F3680B /* CategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
+		29AF2C5627B1A0BC00F3680B /* IntroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroService.swift; sourceTree = "<group>"; };
+		29AF2C5827B1A1C300F3680B /* IntroServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroServiceProtocol.swift; sourceTree = "<group>"; };
 		51CF8AD93177D6C6B46842A0 /* Pods-OrangeNewsTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNewsTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeNewsTaskTests/Pods-OrangeNewsTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64C8DAC91C6D9C3F13CF3346 /* Pods_OrangeNewsTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeNewsTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A24C98F3C63BBDC76437FE2 /* Pods_OrangeNewsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeNewsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +140,8 @@
 			children = (
 				29AF2C3A27B013E600F3680B /* ClientService.swift */,
 				29AF2C3C27B015AB00F3680B /* ClientServiceProtocol.swift */,
+				29AF2C5627B1A0BC00F3680B /* IntroService.swift */,
+				29AF2C5827B1A1C300F3680B /* IntroServiceProtocol.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -381,12 +387,14 @@
 				29AF2C4F27B02C6100F3680B /* HomeVC.swift in Sources */,
 				29AF2C1E27B00D3900F3680B /* AppDelegate.swift in Sources */,
 				29AF2C5327B19DAF00F3680B /* CountryResponse.swift in Sources */,
+				29AF2C5927B1A1C300F3680B /* IntroServiceProtocol.swift in Sources */,
 				29AF2C3D27B015AB00F3680B /* ClientServiceProtocol.swift in Sources */,
 				29AF2C3727B00F2900F3680B /* HeadlinesResponse.swift in Sources */,
 				29AF2C2027B00D3900F3680B /* SceneDelegate.swift in Sources */,
 				29AF2C3B27B013E600F3680B /* ClientService.swift in Sources */,
 				29AF2C5127B032B700F3680B /* SelectCountryViewModel.swift in Sources */,
 				29AF2C5527B19E0900F3680B /* CategoryResponse.swift in Sources */,
+				29AF2C5727B1A0BC00F3680B /* IntroService.swift in Sources */,
 				29AF2C4D27B02C4F00F3680B /* SelectCategoryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

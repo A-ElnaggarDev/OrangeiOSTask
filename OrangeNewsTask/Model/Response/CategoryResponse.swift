@@ -8,6 +8,10 @@
 import Foundation
 
 struct CategoryResponse: Decodable {
+    let category: [CategoryData]
+}
+
+struct CategoryData: Decodable {
     let id: Int
     let name: String
 }

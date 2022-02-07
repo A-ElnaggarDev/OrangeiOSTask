@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 enum APIError: String, Error {
     case noNetwork = "No Network"
     case serverOverload = "Server is overloaded"
@@ -33,6 +34,5 @@ class ClientService {
         var url: URL {
             return URL(string: stringValue)!
         }
-    }
-    
+    }    
 }

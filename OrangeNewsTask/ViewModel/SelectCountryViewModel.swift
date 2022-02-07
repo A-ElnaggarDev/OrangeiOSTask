@@ -10,11 +10,14 @@ import RxSwift
 
 class SelectCountryViewModel {
     
-    let countryArray = ["ae", "be", "ua", "us", "ve", "za", "tw", "mx", "my", "il", "in", "it"]
+    let title = "select country"
+    let introService: IntroServiceProtocol
     
-//    func getCountry() -> Observable<countryArray> {
-//        return Observable.create { Observable in
-//            Observable.onNext(countryArray)
-//        }
-//    }
+    init(introService: IntroServiceProtocol = IntroService()) {
+        self.introService = introService
+    }
+    
+    func getCountry() -> Observable<[CountryData]> {
+        return introService.getCountryList()
+    }
 }
