@@ -14,7 +14,7 @@ protocol IntroServiceProtocol {
     
     func getCountryListData(url: URL) -> Observable<[CountryData]>
     
-//    func getCategoryList() -> Observable<[CategoryData]>
-//    
-//    func getCategoryListData(url: URL) -> Observable<[CategoryData]>
+    func getCategoryList() -> Observable<[CategoryData]>
+    
+    func getCategoryListData(url: URL) -> Observable<[CategoryData]>
 }

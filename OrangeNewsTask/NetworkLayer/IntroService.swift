@@ -58,11 +58,29 @@ class IntroService: IntroServiceProtocol {
         }
     }
     
-//    func getCategoryList() -> Observable<[CategoryData]> {
-//        <#code#>
-//    }
-//    
-//    func getCategoryListData(url: URL) -> Observable<[CategoryData]> {
-//        <#code#>
-//    }
+    func getCategoryList() -> Observable<[CategoryData]> {
+        getCategoryListData(url: Endpoint.category.url)
+    }
+    
+    func getCategoryListData(url: URL) -> Observable<[CategoryData]> {
+        return Observable.create { observable -> Disposable in
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                guard let data = data else {
+                    observable.onError(error?.localizedDescription as! Error)
+                    return
+                }
+                do {
+                    let countries = try JSONDecoder().decode(CategoryResponse.self, from: data)
+                    
+                    observable.onNext(countries.category)
+                } catch {
+                    observable.onError(error)
+                }
+            }
+            task.resume()
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+    }
 }
