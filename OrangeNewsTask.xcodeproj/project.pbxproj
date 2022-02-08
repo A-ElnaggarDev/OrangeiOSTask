@@ -26,6 +26,8 @@
 		29AF2C5B27B1B74C00F3680B /* SelectCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5A27B1B74C00F3680B /* SelectCategoryViewModel.swift */; };
 		29AF2C5E27B2BE8100F3680B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5D27B2BE8100F3680B /* HomeViewModel.swift */; };
 		29AF2C6027B2BFC700F3680B /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C5F27B2BFC700F3680B /* Core.swift */; };
+		29AF2C6227B2D5CF00F3680B /* HomeTblViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C6127B2D5CF00F3680B /* HomeTblViewCell.swift */; };
+		29AF2C6427B2DB6500F3680B /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C6327B2DB6500F3680B /* Extension+UIImageView.swift */; };
 		60B7AAE708B0DE76026D075D /* Pods_OrangeNewsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A24C98F3C63BBDC76437FE2 /* Pods_OrangeNewsTask.framework */; };
 		ABA45EB81F647259208E23F2 /* Pods_OrangeNewsTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C8DAC91C6D9C3F13CF3346 /* Pods_OrangeNewsTaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,8 @@
 		29AF2C5A27B1B74C00F3680B /* SelectCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewModel.swift; sourceTree = "<group>"; };
 		29AF2C5D27B2BE8100F3680B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		29AF2C5F27B2BFC700F3680B /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		29AF2C6127B2D5CF00F3680B /* HomeTblViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTblViewCell.swift; sourceTree = "<group>"; };
+		29AF2C6327B2DB6500F3680B /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		51CF8AD93177D6C6B46842A0 /* Pods-OrangeNewsTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNewsTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeNewsTaskTests/Pods-OrangeNewsTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64C8DAC91C6D9C3F13CF3346 /* Pods_OrangeNewsTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeNewsTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A24C98F3C63BBDC76437FE2 /* Pods_OrangeNewsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeNewsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +204,7 @@
 		29AF2C3927B0139000F3680B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				29AF2C6127B2D5CF00F3680B /* HomeTblViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				29AF2C5F27B2BFC700F3680B /* Core.swift */,
+				29AF2C6327B2DB6500F3680B /* Extension+UIImageView.swift */,
 			);
 			path = "Extension+Core";
 			sourceTree = "<group>";
@@ -398,11 +404,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				29AF2C5B27B1B74C00F3680B /* SelectCategoryViewModel.swift in Sources */,
+				29AF2C6427B2DB6500F3680B /* Extension+UIImageView.swift in Sources */,
 				29AF2C2227B00D3900F3680B /* SelectCountryVC.swift in Sources */,
 				29AF2C4F27B02C6100F3680B /* HomeVC.swift in Sources */,
 				29AF2C1E27B00D3900F3680B /* AppDelegate.swift in Sources */,
 				29AF2C5327B19DAF00F3680B /* CountryResponse.swift in Sources */,
 				29AF2C5927B1A1C300F3680B /* IntroServiceProtocol.swift in Sources */,
+				29AF2C6227B2D5CF00F3680B /* HomeTblViewCell.swift in Sources */,
 				29AF2C3D27B015AB00F3680B /* ClientServiceProtocol.swift in Sources */,
 				29AF2C3727B00F2900F3680B /* HeadlinesResponse.swift in Sources */,
 				29AF2C3B27B013E600F3680B /* ClientService.swift in Sources */,

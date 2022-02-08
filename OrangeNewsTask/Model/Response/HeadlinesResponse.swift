@@ -12,12 +12,12 @@ struct HeadlinesResponse: Decodable {
 }
 
 struct ArticlesData: Decodable {
-    let title: String
-    let description: String
-    let source: SourceData
-    let url: String
-    let urlToImage: String
-    let publishedAt: String
+    let title: String?
+    let description: String?
+    let source: SourceData?
+    let url: String?
+    let urlToImage: String?
+    let publishedAt: String?
 }
 
 struct SourceData: Decodable {

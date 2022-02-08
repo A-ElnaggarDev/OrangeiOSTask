@@ -44,7 +44,7 @@ class SelectCategoryVC: UIViewController {
         categoryTblView.rx.modelSelected(CategoryData.self).subscribe (onNext: { category in
             Core.shared.setCategory(category: category.name)
             let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC") as! HomeVC
-            self.present(homeVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(homeVC, animated: true)
         }).disposed(by: disposeBag)
     }
     

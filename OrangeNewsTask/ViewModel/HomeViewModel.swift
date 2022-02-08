@@ -9,13 +9,14 @@ import Foundation
 import RxSwift
 
 class HomeViewModel {
+    let title = "News"
     let clientService: ClientServiceProtocol
     
     init(clientService: ClientServiceProtocol = ClientService()) {
         self.clientService = clientService
     }
     
-    func getHeadlinesList(country: String, category: String) -> Observable<[CategoryData]> {
+    func getHeadlinesList(country: String, category: String) -> Observable<[ArticlesData]> {
         return clientService.getNewsList(country: country, category: category)
     }
     

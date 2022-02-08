@@ -46,14 +46,17 @@ class ClientService: ClientServiceProtocol {
         return Observable.create { observable -> Disposable in
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
                 guard let data = data else {
+                    print("error in data")
                     observable.onError(error?.localizedDescription as! Error)
                     return
                 }
                 do {
+                    print("news url is \(url)")
                     let headlines = try JSONDecoder().decode(HeadlinesResponse.self, from: data)
                     
                     observable.onNext(headlines.articles)
                 } catch {
+                    print("error in decode")
                     observable.onError(error)
                 }
             }
