@@ -107,17 +107,17 @@
         <!--HomeVC-->
         <scene sceneID="mK7-ik-DAm">
             <objects>
-                <viewController storyboardIdentifier="homeVC" modalPresentationStyle="fullScreen" id="sY6-Uj-Dg1" customClass="HomeVC" customModule="OrangeNewsTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="sY6-Uj-Dg1" customClass="HomeVC" customModule="OrangeNewsTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7z3-t9-A04">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="0dp-uv-mkD">
-                                <rect key="frame" x="0.0" y="60" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nz6-5e-7B1">
-                                <rect key="frame" x="0.0" y="111" width="414" height="751"/>
+                                <rect key="frame" x="0.0" y="155" width="414" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="247" id="MZd-i8-4JJ" customClass="HomeTblViewCell" customModule="OrangeNewsTask" customModuleProvider="target">
@@ -206,13 +206,15 @@
                             <constraint firstItem="JJv-Wr-4Ay" firstAttribute="trailing" secondItem="nz6-5e-7B1" secondAttribute="trailing" id="yCp-UW-Aa2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QgK-q8-WMa"/>
                     <connections>
+                        <outlet property="newsSearchBar" destination="0dp-uv-mkD" id="bGq-ep-GzY"/>
                         <outlet property="newsTblView" destination="nz6-5e-7B1" id="Cff-YI-cu3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D41-yI-RKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2394.202898550725" y="73.660714285714278"/>
+            <point key="canvasLocation" x="3304.347826086957" y="73.660714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xVE-Ou-Czy">
@@ -231,6 +233,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnO-pd-HYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="70.982142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Wd-x7-JDb">
+            <objects>
+                <navigationController storyboardIdentifier="homeVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="31g-ca-lup" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AOs-kg-peR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sY6-Uj-Dg1" kind="relationship" relationship="rootViewController" id="tUt-yl-K2E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsH-CC-m6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394.202898550725" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>

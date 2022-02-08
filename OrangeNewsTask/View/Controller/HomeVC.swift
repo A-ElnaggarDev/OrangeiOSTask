@@ -11,7 +11,9 @@ import RxCocoa
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var newsSearchBar: UISearchBar!
     @IBOutlet weak var newsTblView: UITableView!
+    
     let disposeBag = DisposeBag()
     
     lazy var viewModel: HomeViewModel = {
@@ -52,5 +54,4 @@ class HomeVC: UIViewController {
                 }
         }).disposed(by: disposeBag)
     }
-
 }

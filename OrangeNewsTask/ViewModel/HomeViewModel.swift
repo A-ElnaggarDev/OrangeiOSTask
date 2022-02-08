@@ -20,4 +20,8 @@ class HomeViewModel {
         return clientService.getNewsList(country: country, category: category)
     }
     
+    func getNewsSearchData(query: String) -> Observable<[ArticlesData]> {
+        return clientService.getNewsListSearch(query: query)
+    }
+    
 }
