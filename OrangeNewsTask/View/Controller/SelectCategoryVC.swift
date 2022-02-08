@@ -21,16 +21,13 @@ class SelectCategoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Core.shared.deleteObject(key: "category")
         categoryTblView.separatorStyle = .none
         setNavTitle()
         getTableViewCell()
         selectedCell()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        Core.shared.deleteObject(key: "category")
-    }
     func setNavTitle() {
         navigationItem.title = viewModel.title
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -45,7 +42,6 @@ class SelectCategoryVC: UIViewController {
     
     func selectedCell() {
         categoryTblView.rx.modelSelected(CategoryData.self).subscribe (onNext: { category in
-            print(category.name)
             Core.shared.setCategory(category: category.name)
             let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC") as! HomeVC
             self.present(homeVC, animated: true, completion: nil)

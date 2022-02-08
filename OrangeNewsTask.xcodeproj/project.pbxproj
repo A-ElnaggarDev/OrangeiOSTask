@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		29AF2C1E27B00D3900F3680B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C1D27B00D3900F3680B /* AppDelegate.swift */; };
-		29AF2C2027B00D3900F3680B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C1F27B00D3900F3680B /* SceneDelegate.swift */; };
 		29AF2C2227B00D3900F3680B /* SelectCountryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2C2127B00D3900F3680B /* SelectCountryVC.swift */; };
 		29AF2C2527B00D3900F3680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AF2C2327B00D3900F3680B /* Main.storyboard */; };
 		29AF2C2727B00D3C00F3680B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AF2C2627B00D3C00F3680B /* Assets.xcassets */; };
@@ -45,7 +44,6 @@
 		025B3BECCD3A80D38E8C7EA2 /* Pods-OrangeNewsTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNewsTask.release.xcconfig"; path = "Target Support Files/Pods-OrangeNewsTask/Pods-OrangeNewsTask.release.xcconfig"; sourceTree = "<group>"; };
 		29AF2C1A27B00D3900F3680B /* OrangeNewsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeNewsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AF2C1D27B00D3900F3680B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29AF2C1F27B00D3900F3680B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		29AF2C2127B00D3900F3680B /* SelectCountryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryVC.swift; sourceTree = "<group>"; };
 		29AF2C2427B00D3900F3680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29AF2C2627B00D3C00F3680B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				29AF2C3327B00E6A00F3680B /* View */,
 				29AF2C3227B00E4D00F3680B /* ViewModel */,
 				29AF2C1D27B00D3900F3680B /* AppDelegate.swift */,
-				29AF2C1F27B00D3900F3680B /* SceneDelegate.swift */,
 				29AF2C2327B00D3900F3680B /* Main.storyboard */,
 				29AF2C2627B00D3C00F3680B /* Assets.xcassets */,
 				29AF2C2827B00D3C00F3680B /* LaunchScreen.storyboard */,
@@ -408,7 +405,6 @@
 				29AF2C5927B1A1C300F3680B /* IntroServiceProtocol.swift in Sources */,
 				29AF2C3D27B015AB00F3680B /* ClientServiceProtocol.swift in Sources */,
 				29AF2C3727B00F2900F3680B /* HeadlinesResponse.swift in Sources */,
-				29AF2C2027B00D3900F3680B /* SceneDelegate.swift in Sources */,
 				29AF2C3B27B013E600F3680B /* ClientService.swift in Sources */,
 				29AF2C5127B032B700F3680B /* SelectCountryViewModel.swift in Sources */,
 				29AF2C5527B19E0900F3680B /* CategoryResponse.swift in Sources */,

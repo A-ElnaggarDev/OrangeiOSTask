@@ -15,8 +15,8 @@ class Core {
         UserDefaults.standard.setValue(code, forKey: "country")
     }
     
-    func getCountryCode() -> String {
-        return UserDefaults.standard.string(forKey: "country")!
+    func getCountryCode() -> String? {
+        return UserDefaults.standard.string(forKey: "country") ?? ""
     }
     
     
@@ -25,11 +25,17 @@ class Core {
         UserDefaults.standard.setValue(code, forKey: "category")
     }
     
-    func getCategory() -> String {
-        return UserDefaults.standard.string(forKey: "category")!
+    func getCategory() -> String? {
+        return UserDefaults.standard.string(forKey: "category") ?? ""
     }
     
-    
+//    func isNewUser() -> Bool {
+//        return UserDefaults.standard.bool(forKey: "isNewUser")
+//    }
+//    
+//    func setIsNewUser(isNewUser: Bool) {
+//        UserDefaults.standard.set(isNewUser, forKey: "isNewUser")
+//    }
     
     //MARK: use this function to delete from user defaults
     func deleteObject(key: String) {
