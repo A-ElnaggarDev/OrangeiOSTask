@@ -15,7 +15,7 @@ enum APIError: String, Error {
     case notFound = "Page Not Found"
 }
 
-class ClientService {
+class ClientService: ClientServiceProtocol {
     
     
     
@@ -38,5 +38,29 @@ class ClientService {
         }
     }
     
-   
+    func getNewsList(country: String, category: String) -> Observable<[ArticlesData]> {
+        getNewsListData(url: Endpoint.newsList(country, category).url)
+    }
+    
+    func getNewsListData(url: URL) -> Observable<[ArticlesData]> {
+        return Observable.create { observable -> Disposable in
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                guard let data = data else {
+                    observable.onError(error?.localizedDescription as! Error)
+                    return
+                }
+                do {
+                    let headlines = try JSONDecoder().decode(HeadlinesResponse.self, from: data)
+                    
+                    observable.onNext(headlines.articles)
+                } catch {
+                    observable.onError(error)
+                }
+            }
+            task.resume()
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+    }
 }
