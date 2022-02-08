@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="1600.0000000000002" y="71.651785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="mK7-ik-DAm">
             <objects>
-                <viewController id="sY6-Uj-Dg1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" modalPresentationStyle="fullScreen" id="sY6-Uj-Dg1" customClass="HomeVC" customModule="OrangeNewsTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7z3-t9-A04">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

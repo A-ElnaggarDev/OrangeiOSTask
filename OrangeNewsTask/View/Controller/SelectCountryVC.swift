@@ -25,6 +25,11 @@ class SelectCountryVC: UIViewController {
         selectedCell()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Core.shared.deleteObject(key: "country")
+    }
+    
     func setNavTitle() {
         navigationItem.title = viewModel.title
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -39,7 +44,7 @@ class SelectCountryVC: UIViewController {
     
     func selectedCell() {
         countryTblView.rx.modelSelected(CountryData.self).subscribe (onNext: { country in
-            print(country.code)
+            Core.shared.setCountry(country: country.code)
             let categoryVC = self.storyboard?.instantiateViewController(withIdentifier: "selectCategoryVC") as! SelectCategoryVC
             self.navigationController?.pushViewController(categoryVC, animated: true)
         }).disposed(by: disposeBag)
