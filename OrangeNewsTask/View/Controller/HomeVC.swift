@@ -23,7 +23,7 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
             setNavTitle()
             getNewsList()
-//            openSafari()
+            openSafari()
         }
     
     func setNavTitle() {
@@ -44,6 +44,13 @@ class HomeVC: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    
+    func openSafari() {
+        newsTblView.rx.modelSelected(ArticlesData.self).subscribe (onNext: { article in
+                if let url = URL(string: article.url!) {
+                    print(url)
+                    UIApplication.shared.open(url)
+                }
+        }).disposed(by: disposeBag)
+    }
 
 }
