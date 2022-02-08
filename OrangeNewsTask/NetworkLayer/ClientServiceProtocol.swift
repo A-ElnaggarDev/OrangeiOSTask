@@ -8,9 +8,9 @@
 import Foundation
 import RxSwift
 
-protocol ApiServiceProtocol {
+protocol ClientServiceProtocol {
     
-    func getNewsList() -> Observable<[ArticlesData]>
+    func getNewsList(country: String, category: String) -> Observable<[ArticlesData]>
     
     func getNewsListData(url: URL) -> Observable<[ArticlesData]>
 }

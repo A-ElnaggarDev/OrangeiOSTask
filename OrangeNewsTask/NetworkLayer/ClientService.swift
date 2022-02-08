@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import RxSwift
 
 enum APIError: String, Error {
     case noNetwork = "No Network"
@@ -16,6 +16,8 @@ enum APIError: String, Error {
 }
 
 class ClientService {
+    
+    
     
     enum Endpoint {
         static let base = "https://newsapi.org/v2/top-headlines?"
@@ -34,5 +36,7 @@ class ClientService {
         var url: URL {
             return URL(string: stringValue)!
         }
-    }    
+    }
+    
+   
 }
