@@ -21,10 +21,23 @@ using RxCocoa to link between RxSwift and iOS component
 using dependency injection of api service to easy make unit testing and mocking
 ```
 
-*   singletone design patter with user default
+*   Singletone design patter with user default
 ```
  using to managing access to a userDefault resource which is shared by the entire application
 
+```
+
+*   Decorator design patter with UIViewController
+```
+ make extension from UIViewController class to add function to hide keyboard when tap on screen
+
+```
+
+*   Facad design patter 
+```
+ - make interface hold complexity of load image with url only call load() after uiimage.
+ 
+ - hold complexity to insert, delete and fetch with user default inside Core class.
 ```
 
 *   Git flow
