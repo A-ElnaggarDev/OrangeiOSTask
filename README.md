@@ -26,6 +26,12 @@ using dependency injection of api service to easy make unit testing and mocking
  using to managing access to a userDefault resource which is shared by the entire application
 
 ```
+
+*   Git flow
+```
+ we have development branch upper intro and home branches
+
+```
 ---------------------------------------
 
 
