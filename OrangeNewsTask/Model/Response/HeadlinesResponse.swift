@@ -8,7 +8,7 @@
 import Foundation
 
 struct HeadlinesResponse: Decodable {
-    let articles: [ArticlesData]
+    let articles: [ArticlesData]?
 }
 
 struct ArticlesData: Decodable {
